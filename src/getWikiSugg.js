@@ -2,7 +2,7 @@ import { memoize } from "cerebro-tools"
 
 const getWikipediaSearchSugg = (term) => {
 	const q = encodeURIComponent(term)
-	return fetch(`https://en.wikipedia.org/w/api.php?action=opensearch&format=json&formatversion=2&search=${q}&namespace=0&limit=5&suggest=true`)
+	return fetch(`https://fr.wikipedia.org/w/api.php?action=opensearch&format=json&formatversion=2&search=${q}&namespace=0&limit=5&suggest=true`)
 	.then(response => response.json())
 }
 
